@@ -1,5 +1,5 @@
 # object_war
 
-sensou_war
+sensou.php
 を実行してください。
 
