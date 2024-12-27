@@ -121,12 +121,6 @@ while (count($player1->hand) > 0 && count($player2->hand) > 0) {
 }
 
 
-// 勝者を判定する処理
-// プレイヤーの順位を決定
-// usort($players, function($a, $b) {
-//   return count($b->hand) <=> count($a->hand);
-// });
-
 // 順位を表示
 foreach ($players as $rank => $player) {
     echo ($rank + 1) . "位: {$player->name} (カード枚数: " . count($player->hand) . ")\n";
