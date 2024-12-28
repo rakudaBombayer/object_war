@@ -32,9 +32,11 @@ class Game
 
     public function play()
     {
+      
         $warPile = [];
-
+        
         while (count($this->players[0]->hand) > 0 && count($this->players[1]->hand) > 0) {
+            echo "戦争\n";
             $card1 = array_pop($this->players[0]->hand);
             $card2 = array_pop($this->players[1]->hand);
             echo "プレイヤー1のカードは{$card1->suit}の{$card1->number}です。\n";
@@ -57,7 +59,7 @@ class Game
                 if (count($this->players[0]->hand) > 0 && count($this->players[1]->hand) > 0) {
                     //何もしない
                 } else {
-                    echo "どちらかのプレイヤーの手札が不足しています。ゲームを終了します。\n";
+                    echo "プレイヤーの手札が不足しています。ゲームを終了します。\n";
                     break;
                 }
             }
